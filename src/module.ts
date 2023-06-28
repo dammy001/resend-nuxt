@@ -34,7 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
       throw new Error('.')
     }
 
-    nuxt.options.runtimeConfig.stripe = defu(
+    nuxt.options.runtimeConfig.resend = defu(
       nuxt.options.runtimeConfig.resend,
       {
         key: options.key,

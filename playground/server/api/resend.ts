@@ -15,6 +15,6 @@ export default defineEventHandler(async (event: H3Event) => {
 
     return data
   } catch (error) {
-    return { error }
+    return error
   }
 })
