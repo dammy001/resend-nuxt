@@ -7,7 +7,7 @@ export default defineBuildConfig({
     { input: 'src/module', format: 'esm' },
     { input: 'src/runtime/', outDir: 'dist/runtime' },
   ],
-  externals: ['nuxt', '@nuxt/schema', '@nuxt/kit'],
+  externals: ['nuxt', '@nuxt/schema', '@nuxt/kit', 'h3'],
   rollup: {
     inlineDependencies: true,
   },

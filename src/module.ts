@@ -24,13 +24,14 @@ export default defineNuxtModule<ModuleOptions>({
     key: process.env.RESEND_API_KEY as string,
   }),
   setup: (options, nuxt) => {
-    useLogger('Resend Nuxt')
+    const logger = useLogger('Resend Nuxt')
 
     const { resolve } = createResolver(import.meta.url)
 
     // Make sure the server key is set
     if (!options.key) {
-      throw new Error('Missing Resend API key.')
+      logger.error('Missing Resend API key.')
+      throw new Error('.')
     }
 
     nuxt.options.runtimeConfig.stripe = defu(
@@ -76,8 +77,8 @@ export default defineNuxtModule<ModuleOptions>({
       })
     })
 
-    nuxt.hook('prepare:types', (options) => {
-      options.tsConfig.compilerOptions.paths['#resend/server'] = [
+    nuxt.hook('prepare:types', ({ tsConfig }) => {
+      tsConfig.compilerOptions.paths['#resend/server'] = [
         resolveModule('./server/index', { paths: resolve('./runtime') }),
       ]
     })
