@@ -30,7 +30,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Make sure the server key is set
     if (!options.key) {
-      throw new Error('Missing API key.')
+      throw new Error('Missing Resend API key.')
     }
 
     nuxt.options.runtimeConfig.stripe = defu(
@@ -71,14 +71,14 @@ export default defineNuxtModule<ModuleOptions>({
         },
       )
 
-      nitroConfig.alias['#resend/server'] = resolveModule('./server', {
+      nitroConfig.alias['#resend/server'] = resolveModule('./server/index', {
         paths: resolve('./runtime'),
       })
     })
 
     nuxt.hook('prepare:types', (options) => {
       options.tsConfig.compilerOptions.paths['#resend/server'] = [
-        resolveModule('./server', { paths: resolve('./runtime') }),
+        resolveModule('./server/index', { paths: resolve('./runtime') }),
       ]
     })
   },
