@@ -1,7 +1,7 @@
 {
   "name": "resend-nuxt",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "packageManager": "pnpm@8.6.5",
   "sideEffects": false,
@@ -14,22 +14,23 @@
     "nuxt 3",
     "nuxt",
     "module",
-    "nuxt-module",
-    "laravel-echo",
-    "echo",
-    "laravel"
+    "resend",
+    "emails",
+    "email",
+    "node",
+    "nuxt SSR"
   ],
   "author": {
     "name": "Damilare Anjorin",
     "url": "https://github.com/dammy001"
   },
-  "homepage": "https://github.com/dammy001/laravel-echo-nuxt-module#readme",
+  "homepage": "https://github.com/dammy001/resend-nuxt#readme",
   "bugs": {
-    "url": "https://github.com/dammy001/laravel-echo-nuxt-module/issues"
+    "url": "https://github.com/dammy001/resend-nuxt/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/dammy001/laravel-echo-nuxt-module.git"
+    "url": "git+https://https://github.com/dammy001/resend-nuxt.git"
   },
   "exports": {
     ".": {
@@ -59,7 +60,7 @@
     "format:check": "prettier --check \"./**/*.{vue,js,ts,md}\"",
     "lint": "eslint --cache \"./**/*.{vue,js,ts}\"",
     "lint:fix": "eslint --cache --fix \"./**/*.{vue,js,ts}\"",
-    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public",
+    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public --no-git-checks",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
