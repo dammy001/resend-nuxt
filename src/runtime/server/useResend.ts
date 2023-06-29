@@ -8,7 +8,7 @@ import { useRuntimeConfig } from '#imports'
  * for server-side usage in Nuxt 3. It ensures that only one instance of Resend is created
  * per event context, avoiding unnecessary re-initializations.
  */
-export const useServerResend = async (event: H3Event): Promise<Resend> => {
+export const useResend = async (event: H3Event): Promise<Resend> => {
   const {
     resend: { key },
   } = useRuntimeConfig()

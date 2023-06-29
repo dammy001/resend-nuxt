@@ -1,1 +1,1 @@
-export * from './useServerResend'
+export * from './useResend'
