@@ -66,7 +66,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.6.0",
     "defu": "^6.1.2",
-    "resend": "^0.16.0"
+    "resend": "^0.17.0"
   },
   "devDependencies": {
     "@damilaredev/eslint-config": "^0.0.18",
