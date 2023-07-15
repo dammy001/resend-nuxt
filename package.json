@@ -69,7 +69,7 @@
     "resend": "^0.17.0"
   },
   "devDependencies": {
-    "@damilaredev/eslint-config": "^0.0.18",
+    "@damilaredev/eslint-config": "^0.0.19",
     "@nuxt/module-builder": "^0.4.0",
     "@nuxt/schema": "^3.6.0",
     "@types/node": "^20.3.1",
