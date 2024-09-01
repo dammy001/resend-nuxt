@@ -12,8 +12,8 @@ dependencies:
     specifier: ^6.1.2
     version: 6.1.4
   resend:
-    specifier: ^3.0.0
-    version: 3.3.0
+    specifier: ^4.0.0
+    version: 4.0.0(react-dom@18.3.1)(react@18.3.1)
 
 devDependencies:
   '@damilaredev/eslint-config':
@@ -2086,9 +2086,12 @@ packages:
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
     dev: true
 
-  /@react-email/render@0.0.15:
-    resolution: {integrity: sha512-/pT5dBu0y1mogrfEpc002rgRcXpbShK6PFtxTVU6LZZ+bccvZPgk67HKc01lxpa1eYGQgZ6I+VQ02GRnMDclTg==}
+  /@react-email/render@0.0.17(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-xBQ+/73+WsGuXKY7r1U73zMBNV28xdV0cp9cFjhNYipBReDHhV97IpA6v7Hl0dDtDzt+yS/72dY5vYXrF1v8NA==}
     engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
     dependencies:
       html-to-text: 9.0.5
       js-beautify: 1.15.1
@@ -7926,11 +7929,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /resend@3.3.0:
-    resolution: {integrity: sha512-twDI+rORUQzJC546lEUKhsLKEuqWNFxthZ27kGiK+sR2Cq7CNsro/pgM0W7qT0OiXNLEFp0u3gkJ6kqocpWmYQ==}
+  /resend@4.0.0(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-rDX0rspl/XcmC2JV2V5obQvRX2arzxXUvNFUDMOv5ObBLR68+7kigCOysb7+dlkb0JE3erhQG0nHrbBt/ZCWIg==}
     engines: {node: '>=18'}
     dependencies:
-      '@react-email/render': 0.0.15
+      '@react-email/render': 0.0.17(react-dom@18.3.1)(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+      - react-dom
     dev: false
 
   /resolve-from@4.0.0:
