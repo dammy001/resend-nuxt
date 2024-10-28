@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.2.0",
   "license": "MIT",
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.12.3",
   "sideEffects": false,
   "description": "Resend module for Nuxt 3",
   "engines": {
