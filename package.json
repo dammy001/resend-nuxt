@@ -72,7 +72,7 @@
     "@damilaredev/eslint-config": "^0.0.19",
     "@nuxt/module-builder": "^0.8.0",
     "@nuxt/schema": "^3.6.0",
-    "@types/node": "^20.3.1",
+    "@types/node": "^22.0.0",
     "bumpp": "^9.1.1",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^9.0.0",
